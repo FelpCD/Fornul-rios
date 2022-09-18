@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Preencha o Formullário</h1>
+
+    <form action="cadastro.php">
+        <p> <!-- Nome -->
+            <label for="fornome">Nome</label>
+            <input type="text" name="nome" id="fornome" required maxlength="35" placeholder="Nome Completo">
+        </p>
+        
+        <p> <!-- Nota -->
+            <label for="fornumero">Nota</label>
+            <input type="number" name="numero" id="fornumero" required step="0.1" max="10" min="0" value="0"> 
+        </p>
+
+        <p> <!-- Periodo -->
+            <label for="formes">Periodo da nota</label>
+            <input type="month" name="mes" id="formes">
+        </p>
+
+        <p> <!-- Data -->
+            <label for="fordate">Data</label>
+            <input type="date" name="data" id="fordate">
+        </p>
+        
+        <p> <!-- Hora/Time -->
+            <label for="forhorainicio">Início da Prova</label>
+            <input type="time" name="time" id="forhorainicio" value="00:00"> 
+
+            <label for="forhorafinal">Fim da Prova</label>
+            <input type="time" name="time" id="forhorafinal" value="00:00">
+        </p>
+        <div> <!-- Botões -->
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
