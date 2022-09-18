@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Usuário e Senha</h1>
+
+    <form action="cadastro.php" method="post">
+        <div>
+            <!-- USUÁRIO -->
+            <label for="Usuario">Usuário</label>
+            <input type="text" name="Nome" id="Usuario" required>
+
+        </div>
+
+        <div>
+            <!-- SENHA -->
+            <label for="Senha">Senha</label>
+            <input type="password" name="senha" id="Senha" required minlength="8" maxlength="8"> <!-- O atributo maxlength me permite definir o máximo de caracteres que eu queira que tenha no input, o minlength me permite definir o minimo. -->
+
+            <!-- O atributo required, torna de forma simples o preenchimento do campo input obrigatório. -->
+
+        </div>
+
+        <div>
+            <!-- BOTÕES -->
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+    
+</body>
+</html>
