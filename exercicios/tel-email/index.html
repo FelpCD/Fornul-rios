@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Preencha as Informações</h1>
+
+    <form action="" method="get">
+
+        <fieldset> <!-- Cria um agrupamentos de campos deiferentes -->
+
+            <legend>Dados para contato</legend> <!-- legenda para o fieldset -->
+
+            <p> <!-- Nome -->
+                <label for="fornome">Nome</label>
+                <input type="text" name="nome" id="fornome" placeholder="Nome Completo" required maxlength="30">
+            </p>
+
+            <p> <!-- E-mail -->
+                <label for="foremail">E-mail</label>
+                <input type="email" name="email" id="foremail" placeholder="Digite seu email" required>
+            </p>
+
+            <p> <!-- Telefone -->
+                <label for="fortel">Telefone</label>
+                <input type="tel" name="telefone" id="fortel" placeholder="(xx) x xxxx-xxxx">
+            </p>
+
+        </fieldset>
+
+        <p> <!-- Botões -->
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
