@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Color, range e file</title>
+</head>
+<body>
+
+    <h1>Exemplos de fomulários</h1>
+
+    <h3>Input:range</h3>
+
+    <fieldset>
+
+    <legend>Nível de satisfação</legend>
+
+    <form action="cadastro.php" method="post">
+    
+        <!-- input:range (barra de slider) -->
+        <input type="range" name="nivel" id="range" min="0" max="100" value="0">
+        
+        <div>Nota de avaliação: <span id="valor"></span></div>
+
+    </fieldset>
+
+
+
+    <!-- input:file -->
+    <fieldset>
+        <label for="arquivo">Escolha uma foto</label>
+        <input type="file" name="arg" id="arquivo">
+    </fieldset>
+        
+    
+    <p>
+        <input type="submit" value="Enviar">
+    </p>
+
+    </form>
+    
+    <script src="index.js"></script>
+    
+
+    <script> 
+        // var slider = document.getElementById("range"); /* Essa variável obtem a informação da barra de slider */
+        // var resultado = document.getElementById("valor"); /* Essa variável "guarda" o valor gerado ao deslizar a barra de slider, para que ele seja mostrado na leta  */
+
+        // resultado.innerHTML = slider.value; /* já aqui, será mostrado na tela o valor que a rolagem da barra de slider esta informando */
+
+        // slider.oninput = function(){ /* o slider gera uma entrada de algum valor para a variável resultado*/
+        //    resultado.innerHTML = this.value; /* o valor a parece na tela comforme o slider se move */
+        // }
+    </script>
+</body>
+</html>
